@@ -17,7 +17,7 @@ public class Staff extends Employee
     public Staff(String n, String d, int id, int p)
     {
         super(n, d, id);
-        pay = p;
+        setPay(p);
     }
 
     //Overwrites indetifiers of object to desired values rather than creating new object with desired values
@@ -26,7 +26,7 @@ public class Staff extends Employee
         super.name = newName;
         super.department = newDepartment;
         super.employeeID = newID;
-        pay = newPay;
+        setPay(newPay);
     }
 
     //Getter
@@ -38,6 +38,11 @@ public class Staff extends Employee
     //Setter
     public void setPay(int newPay)
     {
+        //If pay is less than 0 or greater than 20 then the pay equals 0
+        if (newPay < 1 || newPay > 20) 
+        {
+            newPay = 0;
+        }
         pay = newPay;
     }
 

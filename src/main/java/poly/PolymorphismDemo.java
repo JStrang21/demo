@@ -1,9 +1,5 @@
 package poly;
 
-/**
- * Hello world!
- *
- */
 public class PolymorphismDemo 
 {
     public static void main( String[] args )
