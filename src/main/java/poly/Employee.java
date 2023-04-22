@@ -35,7 +35,7 @@ public class Employee extends Person
     {
         super(n);
         department = d;
-        eNumber = employeeID;
+        employeeID = eNumber;
     }
 
     //Overwrites indetifiers of object to desired values rather than creating new object with desired values
