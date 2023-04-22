@@ -53,7 +53,10 @@ public class Graduate extends Student{
     //Equality checker: checks if two person objects are the same
     public boolean isEqual(Graduate otherGrad)
     {
-
+        if (otherGrad.studentNumber == this.studentNumber && otherGrad.name.equals(super.name) && otherGrad.level == level)
+        {
+            return true;
+        }
         return false;
     }
 

@@ -15,13 +15,13 @@ public class PolymorphismDemo
         people[3] = new Graduate("Bugg, June", 9901, 4);
 
         Person p1 = new Student("DeBanque, Robin", 8812);
-
+        Person p2 = new Student("DeBanque, Robin", 8812);
         //System.out.println(p1.equals(people[2]));
 
         Person test1 = new Graduate("Bob");
         
 
-        System.out.println(((Student) test1).getStudentNumber());
+        System.out.println(((Student) p1).isEqual((Student) p2));
 
         /*for (Person p : people)
         {

@@ -48,9 +48,7 @@ public class Student extends Person
     //Equality checker: checks if two person objects are the same
     public boolean isEqual(Student otherStudent)
     {
-        System.out.println(otherStudent.studentNumber);
-        System.out.println(studentNumber);
-        if (otherStudent.studentNumber == this.studentNumber)
+        if (otherStudent.studentNumber == this.studentNumber && otherStudent.name.equals(super.name))
         {
             return true;
         }
