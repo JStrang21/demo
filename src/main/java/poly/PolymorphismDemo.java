@@ -21,9 +21,8 @@ public class PolymorphismDemo
         Person test1 = new Graduate("Bob");
         
 
-        System.out.println(((Student) p1).isEqual((Student) p2));
-
-        /*for (Person p : people)
+        //System.out.println(((Student) p1).isEqual((Student) p2));
+        for (Person p : people)
         {
 
             p.writeOutput(); //even though p is of type Person, the
@@ -32,6 +31,6 @@ public class PolymorphismDemo
             //depending upon which class was used to
             //create the object.
             System.out.println();
-        }*/
+        }
     }
 }
