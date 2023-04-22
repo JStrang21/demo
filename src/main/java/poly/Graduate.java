@@ -1,5 +1,6 @@
 package poly;
 
+//Graduate is a type of student
 public class Graduate extends Student{
     public int level;
 
@@ -50,7 +51,7 @@ public class Graduate extends Student{
         level = newLevel;
     }
     
-    //Equality checker: checks if two person objects are the same
+    //Equality checker: checks if two graduate objects are the same
     public boolean isEqual(Graduate otherGrad)
     {
         if (otherGrad.studentNumber == this.studentNumber && otherGrad.name.equals(super.name) && otherGrad.level == level)

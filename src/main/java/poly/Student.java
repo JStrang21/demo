@@ -1,6 +1,6 @@
 package poly;
 
-//Extends person class
+//Student is a type of person
 public class Student extends Person
 {
     //Student indentifier
@@ -45,7 +45,7 @@ public class Student extends Person
         studentNumber = newStudentNumber;
     }
 
-    //Equality checker: checks if two person objects are the same
+    //Equality checker: checks if two student objects are the same
     public boolean isEqual(Student otherStudent)
     {
         if (otherStudent.studentNumber == this.studentNumber && otherStudent.name.equals(super.name))
