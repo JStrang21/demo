@@ -53,4 +53,12 @@ public class Staff extends Employee
         return false;
     }
     
+    //Prints object instance variables
+    public void writeOutput() 
+    {
+        System.out.println("Name: " + super.name);
+        System.out.println("Dept: " + super.department);
+        System.out.println("Employee ID:" + super.employeeID);
+        System.out.println("Pay Grade: " + pay);
+    }
 }

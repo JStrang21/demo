@@ -80,12 +80,12 @@ public class Employee extends Person
         return false;
     }
 
-    //Prints object instance indentifiers
+    //Prints object instance variables
     public void writeOutput()
     {
         System.out.println("Name: " + super.name);
         System.out.println("Dept: " + department);
-        System.out.println("Employee ID:" + employeeID);
+        System.out.println("Employee ID: " + employeeID);
     }
 
     
