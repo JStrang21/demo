@@ -38,7 +38,7 @@ public class Faculty extends Employee
     //Setter
     public void setTitle(String newTitle)
     {
-        title = newTitle;
+        this.title = newTitle;
     }
 
     //Equality checker: checks if two graduate objects are the same
@@ -47,7 +47,7 @@ public class Faculty extends Employee
         //Checks if all identifiers of both objects are equal
         if (otherFaculty.name.equals(super.name) && otherFaculty.department.equals(super.department) && otherFaculty.employeeID == super.employeeID && otherFaculty.title.equals(title))
         {
-            //If all variable values are the same then objects are same
+            //If name, department, and id of both faculty are equal then they're the same faculty
             return true;
         }
         return false;

@@ -52,7 +52,7 @@ public class Staff extends Employee
         //Checks if all identifiers of both objects are equal
         if (otherStaff.name.equals(super.name) && otherStaff.department.equals(super.department) && otherStaff.employeeID == super.employeeID && otherStaff.pay == pay)
         {
-            //If all variable values are the same then objects are same
+            //If name, department, id, and pay of both staff are equal then they're the same staff
             return true;
         }
         return false;

@@ -54,6 +54,7 @@ public class Undergraduate extends Student{
     //Equality checker: checks if two undergrad objects are the same
     public boolean isEqual(Undergraduate otherUndergrad)
     {
+        //If name, number, and level of both undergrad objects are the same then they're the same undergrad
         if (otherUndergrad.studentNumber == this.studentNumber && otherUndergrad.name.equals(super.name) && otherUndergrad.level == level)
         {
             return true;

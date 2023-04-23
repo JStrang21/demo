@@ -38,6 +38,7 @@ public class Person
     //Equality checker: checks if two person objects are the same
     public boolean hasSameName(Person otherPerson) 
     {
+        //If both name variables are equal then they're the same person
         if (otherPerson.name.equals(name))
         {
             return true;

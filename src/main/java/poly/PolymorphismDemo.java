@@ -4,37 +4,35 @@ public class PolymorphismDemo
 {
     public static void main( String[] args )
     {
-        /* Person[] Person = new Person[4];
-        Person[0] = new Graduate("Cotty, Manny", 4910, 1);
-        Person[1] = new Graduate("Kick, Anita", 9931, 2);
-        Person[2] = new Student("DeBanque, Robin", 8812);
-        Person[3] = new Graduate("Bugg, June", 9901, 4);
+        Person[] people = new Person[21];
 
-        Person p1 = new Student("DeBanque, Robin", 8812);
-        Person p2 = new Student("DeBanque, Robin", 8812);
-        //System.out.println(p1.equals  Person[2]));
-
-        Person test1 = new Graduate("Bob");
-        
-
-        //System.out.println(((Student) p1).isEqual((Student) p2));
-        for (Person p : Person)
-        {
-
-            p.writeOutput(); //even though p is of type Person, the
-            //writeOutput method associated with
-            //Undergraduate or Student is invoked
-            //depending upon which class was used to
-            //create the object.
-            System.out.println();
-        } */
-
-        Person p1 = new Staff("Yawf, Len", "MECH", 8942, 28);
-	    Person p2 = new Staff("Bruh, John", "ARTE", 2369, -2);
-	    Person p3 = new Employee("Brando, Dio", "JOJO", 8945);
-	    Person p4 = new Faculty("Hennen, Christie", "EECS", 9821, "Advisor");
-	    Person p5 = new Undergraduate("Tired, Iam", 4532, 6);
+		people[0] = new Person("Smith, Ron");
+		people[1] = new Undergraduate();
+		people[2] = new Undergraduate("Kick, Anita", 9931, 2);
+		people[3] = new Employee();
+		people[4] = new Staff("Harvey, Patrick", "EECS", 4555, 20);
+		people[5] = new Student();
+		people[6] = new Staff();
+		people[7] = new Person();
+		people[8] = new Undergraduate("Bugg, June", 9901, 4);
+		people[9] = new Student("DeBanque, Robin", 8812);
+		people[10] = new Faculty("Thomas, Lawrence", "EECS", 6221, "Associate Professor");
+		people[11] = new Faculty();
+		people[12] = new Student("Rumbry, Jon", 9693);
+		people[13] = new Employee("Deer, Bob", "CHEM", 4201);
+		people[14] = new Faculty("Hobbs, Joe", "EECS", 4531, "Associate Chair");
+		people[15] = new Employee("Shmo, Joe", "MAIN", 7824);
+		people[16] = new Staff("Yawf, Len", "MECH", 8942, 28);
+		people[17] = new Staff("Bruh, John", "ARTE", 2369, -2);
+		people[18] = new Employee("Brando, Dio", "JOJO", 8945);
+		people[19] = new Faculty("Hennen, Christie", "EECS", 9821, "Advisor");
+		people[20] = new Undergraduate("Tired, Iam", 4532, 6);
 		
-        p1.writeOutput();
+//WHAT IS THIS DOING
+		for (Person p : people)
+		{
+			p.writeOutput();
+			System.out.println();
+		}
     }
 }

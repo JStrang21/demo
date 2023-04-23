@@ -71,7 +71,7 @@ public class Employee extends Person
     //Equality checker: checks if two employee objects are the same
     public boolean isEqual(Employee otherEmployee)
     {
-        //Checks if all identifiers of both objects are equal
+        //If name and department of both employees are equal then they're the same employees
         if (otherEmployee.name.equals(super.name) && otherEmployee.department == department && otherEmployee.employeeID == employeeID)
         {
             //If all are same, then object are equal
